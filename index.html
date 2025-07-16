@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <h1>Rock Paper Scissor</h1>
-   <div class="choices">
-    <div class="choice" id="rock">
-        <img src="https://github.com/user-attachments/assets/99c1325c-6967-4101-aafb-2e6ea567dead" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">BS Photography</div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input
+            type="search"
+            class="search_box"
+            placeholder="Type to search"
+          />
+          <button type="submit" class="search_button">Search</button>
+        </div>
+      </header>
+      <article class="body_items">
+        <section class="headings">
+          <h1>Colour Grading &<br> <span>Photography</span><br> Course</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum eligendi labore, quis<br> reiciendis pariatur doloribus incidunt magni sunt unde ducimus iure. Sed, tempore <br>amet minima incommodi consectetur? Rem quis unde non illo nostrum?
+          </p>
+          <button class="join_button">Join Us</button>
+        </section>
+        <section class="login_box">
+          <h1>Login Here</h1>
+          <form>
+            <input type="email" id="email" placeholder="Enter Email Here" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter Password Here"
+            />
+          </form>
+          <button type="submit" class="login_button">Login</button>
+          <p>Don't have account<br /><a href="#">Sign Up</a>Here</p>
+        </section>
+      </article>
     </div>
-    <div class="choice" id="papper">
-        <img src="https://github.com/user-attachments/assets/90bde087-e69c-42b7-a8f4-c68948bec790" alt="">
-    </div>
-    <div class="choice" id="scissor">
-        <img src="https://github.com/user-attachments/assets/1db50579-eabf-436b-a295-cf7e7288586e" alt="">
-    </div>
-   </div>
-   <div class="score-board">
-    <div class="score">
-        <p id="user-score">0</p>
-        <p>you</p>
-    </div>
-    <div class="score">
-        <p id="comp-score">0</p>
-        <p>comp</p>
-    </div>
-   </div>
-   <div class="msg-container">
-    <p id="msg">play your move</p>
-   </div>
-</body>
-<script src="main.js"></script>
+  </body>
 </html>
