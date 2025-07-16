@@ -1,66 +1,170 @@
-*{
-    margin: 0;
+body{
+    background: url(./artistic-blurry-colorful-wallpaper-background\ \(1\).jpg);
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    margin:0;
     padding: 0;
 }
-h1{
-    color: #fff;
-    background-color: rgb(14, 14, 84);
-    height: 5rem;
-    text-align: center;
-    line-height: 5rem;
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    font-weight: 900;
 }
-.choices{
+.logo{
+    margin:30px;
+    font-size: 28px;
+    color:white;
+}
+header ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    gap: 4rem;
-}
-.choice:hover{
-   
-   background-color: rgb(32, 13, 120);
-   cursor: pointer;
+    margin:30px;
 
 }
-.choice{
-    height: 210px;
-    width: 210px;
+header ul li{
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    padding-bottom: 2px;
+    color:white;
+    margin-right: 60px;
+    position: relative;
+}
+header ul a::after{
+    content: "";
+    width: 100%;
+    height:2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(37, 194,237) ;
+    position: absolute;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+header ul a:hover::after{
+    transform: scaleX(1);
+}
+.search{
+    margin:30px;
+}
+.search_box{
+    border:2px solid rgb(37, 194, 237);
+    padding: 5px 30px;
+    padding-left: 10px;
+    background: transparent;
+    border-radius: 5px 0px 0px 5px;
+}
+.search_button{
+    padding:7px 15px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(37, 194, 237);
+    margin-left: -5px;
+    transition: 0.4s ease;
+}
+.search_button:hover{
+    background-color: rgb(31, 161, 197);
+}
+.search_box:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.body_items{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin-left: 30px;
+}
+.headings{
+    color: white;
+    width: 50%;
+    padding: 30px;
+}
+.headings h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Times New Roman';
+    margin-bottom: 0px;
+}
+.headings p{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+    font-family: Arial;
     
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+}
+span{
+    color:rgb(37, 194, 237);
+    font-size:60px;
+}
+.login_box{
+    color: white;
+    background: linear-gradient(to left, #000000 25%, #1a73e8);
+    width: 20%;
+    margin-top: 80px;
+    margin-right: 40px;
+    display:  flex;
+    flex-direction: column;
     align-items: center;
-
-}
-img{
-height: 200px;
-width: 200px;
-object-fit: cover;
-border-radius: 50%;
-}
-.score-board{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-top: 2rem;
-    gap: 5rem;
-}
-#user-score,#comp-score{
-    font-size: 3rem;
-}
-.msg-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#msg{
+    padding: 20px;
     border-radius: 10px;
-   color: #fff;
-   padding: 1.1rem;
-   font-size: 1.4rem;
-   line-height:2rem;
-
-   margin-top: 4rem;
-    background-color: rgb(27, 32, 91);
+    border-right: 1px solid rgb(76, 76, 183)
+}
+form input{
+    padding: 10px 80px;
+    margin-bottom: 20px;
+    width: 50%;
+    background: transparent;
+    border-bottom: 1px solid rgb(31, 161, 197);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+form input:focus{
+    outline: none;
+}
+form input::placeholder{
+    color: white;
+}
+.login_button{
+    margin-top: 30px;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(37, 194, 237);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.login_button:hover{
+    background-color: rgb(31, 161, 197);
+}
+.login_box h1{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+.join_button{
+    background-color: rgb(37, 194, 237);
+    padding: 10px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.join_button:hover{
+    background-color: rgb(31, 161, 197);
+}
+article section a{
+    color: rgb(31, 161, 197);
 }
